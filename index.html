@@ -288,7 +288,7 @@ footer{padding:26px 5vw 34px;text-align:center;color:var(--dim);font-size:11px;
   <div class="hero-num" aria-hidden="true">7-11</div>
   <div class="hero-copy">
     <div class="overline fade">MISSION 07 · 軌道部署程序</div>
-    <h1 class="fade d1">把客廳化成任務控制中心,<br><b>啟動零重力休憩艙,接入未來世界。</b></h1>
+    <h1 class="fade d1">把客廳,<br>變成<b>任務控制中心</b>。</h1>
     <div class="h1-orn fade d1"></div>
     <div class="hero-row">
       <p class="lead fade d2">零重力懸浮姿勢 · 8 點按摩陣列 · 38dB 輕音馬達。
@@ -772,8 +772,8 @@ PARTS.forEach(p=>{
 let showTags = true;
 const _v = new THREE.Vector3();
 
-/* ═══ Blender 椅子替換區(USE_GLB = false → 顯示內建椅)═══ */
-const USE_GLB   = false;
+/* ═══ Blender 椅子替換區(USE_GLB = false / true → 顯示內建椅)═══ */
+const USE_GLB   = true;
 const MODEL_URL = 'chair.glb';
 const TARGET_H  = 2.3;
 
@@ -1243,5 +1243,3 @@ const BG_GLOWS = BG_PALETTE.map(col=>{
 </script>
 </body>
 </html>
-之後如果要啟用 Blender 模型替換(USE_GLB = true),才需要改用本機伺服器開啟(python3 -m http.server 8000 → http://localhost:8000);
-
